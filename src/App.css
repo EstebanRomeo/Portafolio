@@ -1,39 +1,37 @@
+
 #textblock {
   background-color: #210002;
-  height: 100vh;
+  height: 900px;
+  margin-top: -160px;
+}
+
+.foto{
+  width: 100px;
+  position: absolute;
+  left: 590px;
 }
 
 #textblock-container {
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
   padding-top: 70px;
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #textblock-title {
   color: #ffaf1b;
   font-size: 35px;
   font-weight: 600;
-  font-family: "Helvetica Neue";
 }
 
 #textblock-content {
   color: #ffaf1b;
-  font-size: 20px;
-}
-
-#textblock-footer {
-  color: #ffaf1b;
   font-size: 15px;
-  font-weight: 400;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  margin-bottom: 20px;
-
 }
+
 
 #textblock-devsense {
   text-decoration: none;
@@ -71,9 +69,6 @@
   background-image: url(./images/mountains.png);
 }
 
-#logoland {
-  background-image: url(./images/logo_land.png);
-}
 
 #jungle1 {
   background-image: url(./images/jungle1.png);
@@ -98,3 +93,26 @@
 #manonmountain {
   background-image: url(./images/man_on_mountain.png);
 }
+
+
+.nombre{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-left: 0%;
+  color: #6b4600;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  background-color: #ec9a0096;
+  width: 100%;
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.descrp{
+  font-size: 20px;
+}
+

@@ -1,0 +1,325 @@
+.containerFotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffaf1b;
+    height: 700px;
+    color: #6b4600;
+    margin-top: -419px;
+    position: relative;
+}
+
+.containerFotos {
+  position: relative;
+  /* Agrega cualquier otro estilo que necesites para el contenedor de fotos */
+}
+
+.imagesContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+  gap: 10px; /* Espacio entre las imágenes */
+  width: 90%; /* Ancho del contenedor de imágenes */
+  max-width: 1000px; /* Ancho máximo del contenedor */
+}
+
+.modal {
+  position: fixed;
+  top: 20;
+  left: 150px;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegúrate de que el modal tenga un z-index alto para que aparezca encima de otros elementos */
+}
+.zoom-img{
+  width: 400px;
+  margin: 20px;
+}
+.zoom-img.zoomed {
+  transform: scale(1.2); /* Ajusta el tamaño de la imagen al 120% */
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 300px;
+  background-color: white;
+  padding: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #001925;
+}
+
+.close {
+  position: absolute;
+  top: 160px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+/* Ajusta cualquier otro estilo necesario para el contenido del modal */
+
+.h1Proy{
+  font-size: 40px;
+}
+.containerProyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.containerImgProyectos{
+    display: flex;
+    gap: 50px;
+}
+
+.containerImgProyectos img{
+    width: 400px;
+    margin: 20px;
+}
+
+
+
+.cardContainer {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition-duration: .5s;
+    cursor: pointer;
+  }
+  
+  .profileDiv {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    transition-duration: .5s;
+    color: rgb(155, 155, 155);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .cardContainer:hover .profileDiv {
+    transform: translateX(-25%) translateY(-20%);
+    transition-duration: .5s;
+  }
+  
+  .infoDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 1;
+  }
+  
+  .nameDiv {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: aliceblue;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    gap: 2px;
+  }
+  
+  .name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .role {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    margin-bottom: 5px;
+  }
+  
+  .socialDiv {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(14, 14, 14);
+    gap: 25px;
+  }
+  
+  .infoDiv a {
+    width: 50%;
+  }
+  
+  .socials {
+    width: 100%;
+    fill: rgb(14, 14, 14);
+  }
+
+
+.containerContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #210002;
+    margin-top: 280px;
+    height: 100%;
+    color: #ffaf1b;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  .contacto, .infoCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .orange {
+  color: #ff7a01;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #ffaf1b;
+  padding: 30px;
+  border-left: 5px solid #ff7a01;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+.form{
+  display: flex;
+  gap: 20px;
+}
+.heading {
+  display: block;
+  color: #210002;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  height: 50px;
+  background-color: #210002;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid ;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #210002;
+  color: #ffffff;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #ff7a01;
+  padding: 10px;
+  height: 20px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ffaf1b);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ffaf1b;
+  color: #001925;
+}
+
+form{
+  display: flex;
+  gap: 20px;
+}
